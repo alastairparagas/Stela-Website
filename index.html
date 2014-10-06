@@ -1,0 +1,491 @@
+<!-- Stela Inc. Copyright 2014. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Stela - Tech and Innovation Hub at Miami</title>
+
+    <link href="assets/css/hover_pack.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/colors/color-74c9be.css" rel="stylesheet">    
+    <link href="assets/css/animations.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    
+    
+    <!-- JavaScripts needed at the beginning
+    ================================================== -->
+    <!-- <script type="text/javascript" src="http://alvarez.is/demo/marco/assets/js/twitterFetcher_v10_min.js"></script> -->
+    <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+    <!-- Main Jquery & Hover Effects. Should load first -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/hover_pack.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 12,
+
+                    scrollwheel: false,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(25.75812,-80.376174),
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [	{		featureType:'water',		stylers:[{color:'#74c9be'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#f2f2f2'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#444444'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using out element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+            }
+            $(function(){
+                $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        }(window));
+    </script>
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    
+    <div id="headerwrap">
+    	<div class="container">
+			<div class="row centered">
+				<div class="col-md-8 col-md-offset-2">
+					<h1>Web and Mobile apps. <br> Technology at your grasp. <br> We create the future.</h1>
+    				<p class="mt"><a href="#about" type="button" class="btn btn-cta btn-lg">LEARN ABOUT STELA</a></p>
+				</div>
+				
+			</div>
+    	</div>
+    </div>
+  
+    <!-- What is Stela? Portion -->
+	<div class="container" id="about">	
+        <div class="row mt centered ">
+			<div class="col-lg-4 col-lg-offset-4">
+				<h3>What Is Stela?</h3>
+				<hr>
+			</div>
+		</div>
+        <div class="row mt">
+            <div class="col-md-4 desc">
+				<img class="img-responsive block-center" src="assets/img/portfolio/portfolio2.jpg" alt="" />
+                <p class="centered">A vision for the future</p>
+				<p class="lead centered">Stela started with the duo of High School students - Alastair Paragas and Anil Jason. Together, they teamed up to grow a team of talented developers and designers bent on shaping products and services that seek to give people back control of technology.</p>
+            </div>
+            <div class="col-md-4 desc">
+                <img class="img-responsive block-center" src="assets/img/portfolio/portfolio1.jpg" alt="" />
+                <p class="centered">Web, Mobile, and Desktop App Development</p>
+				<p class="lead centered">Stela prides itself in creating high quality apps for both the web, mobile (Android and iOS), and desktop (Windows, Macintosh, Linux) platforms. We also can design websites customized to your needs, whether it be for an individual flair or business pursuit.</p>
+            </div>
+            <div class="col-md-4 desc">
+                <img class="img-responsive block-center" src="assets/img/portfolio/portfolio3.jpg" alt="" />
+                <p class="centered">Dedication for perfection</p>
+                <p class="lead centered">All our products and services undergo continous and unparalleled scrutiny. We utilize the full scope of the web, from virtual meetings and assignment boards to our very own in-house software (and artificial intelligence to boot) to get the job done.</p>
+            </div>
+        </div>
+        
+    </div>
+      
+    <!-- Team -->    
+	<div id="white">
+		<div class="container">
+	    	<div class="row mt">
+	    		<div class="col-md-4 col-md-offset-4 centered">
+	    			<h3>Our Team</h3>
+	    			<hr>
+	    		</div>
+	    	</div><! --/row -->
+			
+			<div class="row">
+				<div class="col-sm-4">
+				    <div class="members">
+				        <img src="assets/img/team/alastair.jpg" alt="" class="img-responsive team-picture">
+				        <div class="team-info hidden-xs centered">
+					       <div class="subhead">Co-Founder & Developer</div>
+					       <h2 class="team-name">Alastair</h2>
+					       <p class="team-description"><i class="fa fa-2x fa-tumblr"></i><i class="fa fa-2x fa-youtube"></i></p>
+				        </div>
+					</div>
+				</div>
+				
+				<div class="col-sm-4">
+                    <div class="members">
+                        <img src="assets/img/team/anil.jpg" alt="" class="img-responsive team-picture">
+                        <div class="team-info hidden-xs centered">
+                            <div class="subhead">Co-Founder & Developer</div>
+                            <h2 class="team-name">Anil</h2>
+                            <p class="team-description"><i class="fa fa-2x fa-tumblr"></i><i class="fa fa-2x fa-youtube"></i></p>
+					   </div>
+					</div>
+				</div>
+                
+                <div class="col-sm-4">
+                    <div class="members">
+                        <img src="assets/img/team/jordane.JPG" alt="" class="img-responsive team-picture">
+                        <div class="team-info hidden-xs centered">
+                            <div class="subhead">Junior Web Developer</div>
+                            <h2 class="team-name">Jordane</h2>
+                            <p class="team-description"><i class="fa fa-2x fa-tumblr"></i><i class="fa fa-2x fa-youtube"></i></p>
+                        </div>
+					</div>
+				</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="members">
+                        <img src="assets/img/team/wilfredo.JPG" alt="" class="img-responsive team-picture">
+                        <div class="team-info hidden-xs centered">
+                            <div class="subhead">Junior Native Developer</div>
+                            <h2 class="team-name">Wilfredo</h2>
+                            <p class="team-description"><i class="fa fa-2x fa-tumblr"></i><i class="fa fa-2x fa-youtube"></i></p>
+                        </div>
+					</div>
+				</div>
+                <div class="col-sm-4">
+                    <div class="members">
+                        <img src="assets/img/team/jasmine.jpg" alt="" class="img-responsive team-picture">
+                        <div class="team-info hidden-xs centered">
+                            <div class="subhead">Designer</div>
+                            <h2 class="team-name">Jasmine</h2>
+                            <p class="team-description"><i class="fa fa-2x fa-tumblr"></i><i class="fa fa-2x fa-youtube"></i></p>
+                        </div>
+					</div>
+				</div>
+                <div class="col-sm-4">
+                    <div class="members">
+                        <img src="assets/img/team/kenneth.jpg" alt="" class="img-responsive team-picture">
+                        <div class="team-info hidden-xs centered">
+                            <div class="subhead">Developer & PR</div>
+                            <h2 class="team-name">Kennet</h2>
+                            <p class="team-description"><i class="fa fa-2x fa-tumblr"></i><i class="fa fa-2x fa-youtube"></i></p>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Memorable Quote -->    
+    <div id="cta01">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-8 col-lg-offset-2">
+    				<h2>Our Mission: To serve public interests and desires<br>
+                        <small style="color:white;">We have been doing so 24/7 since we were just a small group back in High School, and that commitment shall not end.</small></h2>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+	<!-- Portfolio Section -->    
+	<div class="container" id="portfolio">
+		<div class="row mt centered ">
+			<div class="col-lg-4 col-lg-offset-4">
+				<h3>Our Latest Work</h3>
+				<hr>
+			</div>
+		</div><!-- /row -->
+		<div class="row mt centered">	
+			<div class="col-xs-6 col-sm-4 desc">
+				<a class="b-link-fade b-animate-go">
+                    <img class="img-responsive block-center" src="assets/img/portfolio/coynd.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Coynd</h4>
+					  	<p class="b-from-right b-animate b-delay03">Web & Mobile App</p>
+					</div>
+				</a>
+				<p><a>Coynd</a> is a web and mobile app that allows users to track their spending through keeping digital records of receipts and general bookkeeping.</p>
+			</div>
+			<div class="col-xs-6 col-sm-4 desc">
+				<a class="b-link-fade b-animate-go">
+                    <img class="img-responsive block-center" src="assets/img/portfolio/fapp.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">FAPP</h4>
+					  	<p class="b-from-right b-animate b-delay03">Android & Pebble Smartwatch App</p>
+					</div>
+				</a>
+				<p><a>FAPP</a> is a joint Android-Pebble SmartWatch app. Upon the stroke of your wrist (provided you have the Pebble SmartWatch), you can track your errr, faps.</p>
+			</div>
+			<div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-sm-4 desc">
+				<a class="b-link-fade b-animate-go">
+                    <img class="img-responsive block-center" src="assets/img/portfolio/caiu.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">CAIU</h4>
+					  	<p class="b-from-right b-animate b-delay03">Artificial Intelligence</p>
+					</div>
+				</a>
+				<p><a>CAIU</a> - Complementary Artificial Intelligence Unit, was an experimental in-house artificial intelligence assistant developed with browser technologies.</p>
+			</div>
+		</div>
+		<div class="row mt centered">	
+			<div class="col-xs-6 col-sm-4 desc">
+				<a class="b-link-fade b-animate-go">
+                    <img class="img-responsive block-center" src="assets/img/portfolio/myrighttoplay.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">My Right To Play</h4>
+					  	<p class="b-from-right b-animate b-delay03">Flash game portal</p>
+					</div>
+				</a>
+				<p><a>My Right To Play</a> is a flash game portal site designed back in our High School days, during the climax of Adobe Flash popularity. Thousands of flash games.</p>
+			</div>
+			<div class="col-xs-6 col-sm-4 desc">
+				<a class="b-link-fade b-animate-go">
+                    <img class="img-responsive block-center" src="assets/img/portfolio/r8m3.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">R8M3</h4>
+					  	<p class="b-from-right b-animate b-delay03">Mobile and Web App</p>
+					</div>
+				</a>
+				<p><a>R8M3</a> is a web and mobile app that allows strangers to upload and rate each other's pictures, all in a beautiful interface. Think Instagram + Hot or Not.</p>
+			</div>
+			<div class="col-xs-6 col-xs-offset-3 col-sm-offset-0 col-sm-4 desc">
+				<a class="b-link-fade b-animate-go">
+                    <img class="img-responsive block-center" src="assets/img/portfolio/loaded.jpg" alt="" />
+					<div class="b-wrapper">
+					  	<h4 class="b-from-left b-animate b-delay03">Loaded</h4>
+					  	<p class="b-from-right b-animate b-delay03">Android App</p>
+					</div>
+				</a>
+				<p><a>Loaded</a> is an Android app that features a natively designed vector game engine, set with a character who's too tipsy to be playing carnival shooting games.</p>
+			</div>
+		</div>
+
+		<div class="row mt centered">
+			<div class="col-lg-10 col-lg-offset-1">
+    			<h3>Post-Script: Experience</h3>
+                <p>Stela (formerly Forfront Technology) was founded back on September 2010, during a conversation between founders Alastair Paragas and Anil Jason during an Engineering class. Ever since then, the two have been inseparable, staying late night coding applications, My Right To Play being the first of them. Ever since then, they grew to join and compete at technological competitions. Coming to their adult years, the growing team has set its sights to creating a mature and driven company.</p>
+			</div>
+		</div>
+	</div>
+
+	
+	<! ========== BLACK SECTION ================================================================================================= 
+	=============================================================================================================================>    
+	<div id="black">
+		<div class="container">
+			<div class="row mt centered">
+				<div class="col-lg-10 col-lg-offset-1">
+					<h3>Our Work Process</h3>
+					<hr>
+					<p>Stela is driven to create beautiful products and pursue perfect service. We utilize a creative but order and structured work process to ensure the quality and timeliness of our tasks.</p>
+				</div>
+			</div>
+	    	<div class="row mt">
+	    		<div class="col-lg-3">
+	    			<p class="capitalize">1</p>
+	    			<h4>Communication</h4>
+	    			<p>We establish virtual group meetings through Google Hangouts to communicate about key problems and ideas at hand. Meetings are held bi-monthly or on-demand.</p>
+	    		</div>
+	    		<div class="col-lg-3">
+	    			<p class="capitalize">2</p>
+	    			<h4>Kanban</h4>
+	    			<p>We use pen/paper to draw up our ideas. Utilizing the Kanban system of organization, we design steps of a solution and assign them to the appropriate members.</p>
+	    		</div>
+	    		<div class="col-lg-3">
+	    			<p class="capitalize">3</p>
+	    			<h4>Git, Bower, Gulp, Repeat</h4>
+	    			<p>Utilizing the full scope of tools available in the web, from Git revision management system, to automating tools like Gulp, we keep the project/task clean and organized.</p>
+	    		</div>    	
+	
+	    		<div class="col-lg-3">
+	    			<p class="capitalize">4</p>
+	    			<h4>Maintenance</h4>
+	    			<p>With the power of Social Media such as Youtube, Facebook, and Instagram, we disseminate conversation from the community to get tips on how to improve our product/service.</p>
+	    		</div>
+	    	</div>
+	    </div>
+    </div>
+
+	<!-- Picture Gallery -->    
+    <div id="cta02">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-8 col-lg-offset-2">
+                    <h2>Stela. Setting for the Stars.<br> 
+                        <small style="color:white;">Years of experience did not go unrecorded. A peek at some of our work throughout the years.</small></h2>
+    			</div>
+    		</div>
+    	</div>
+    </div>   
+    <div class="container" id="gallery">
+    	<div class="row mt">
+    		<div class="col-md-4 centered">
+    			<img src="assets/img/gallery/fsuhackathon.jpg" class="img-responsive block-center">
+    		</div>
+    		<div class="col-md-4 centered">
+    			<img src="assets/img/gallery/fsuhackathon1.jpg" class="img-responsive block-center">
+    		</div>
+    		<div class="col-md-4 centered">
+    			<img src="assets/img/gallery/garage.jpg" class="img-responsive block-center">
+    		</div>
+    	</div>
+        <div class="row mt">
+            <div class="col-md-4 centered">
+    			<img src="assets/img/gallery/groupbed.jpg" class="img-responsive block-center">
+    		</div>
+    		<div class="col-md-4 centered">
+    			<img src="assets/img/gallery/table.jpg" class="img-responsive block-center">
+    		</div>
+    		<div class="col-md-4 centered">
+    			<img src="assets/img/gallery/crs.jpg" class="img-responsive block-center">
+    		</div>   	
+        </div>
+    </div>
+	
+	<!-- Stats -->    
+	<div id="black">
+		<div class="container">
+            <div class="row mt">
+                <div class="col-md-4 col-md-offset-4 centered">
+                    <h3>Stela Facts and Stats</h3>
+                    <hr/>
+                </div>
+            </div>
+			<div class="row mt centered">
+				<div class="col-sm-4">
+					<p><i class="fa fa-instagram"></i></p>
+					<h1>10+</h1>
+					<hr>
+					<h4>Pictures Taken</h4>
+				</div>
+
+				<div class="col-sm-4">
+					<p><i class="fa fa-desktop"></i></p>
+					<h1>3</h1>
+					<hr>
+					<h4>Hackathons joined</h4>
+				</div>
+
+				<div class="col-sm-4">
+					<p><i class="fa fa-trophy"></i></p>
+					<h1>2</h1>
+					<hr>
+					<h4>Awards Earned</h4>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Contact Section -->    
+	<div id="white">
+		<div class="container">
+	    	<div class="row mt">
+	    		<div class="col-lg-4 col-lg-offset-4 centered">
+	    			<h3>Contact Us</h3>
+	    			<hr>
+	    		</div>
+	    	</div>
+		</div>
+	   <div id="map"></div>	
+	</div>
+	
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<!-- ADDRESS -->
+				<div class="col-md-6">
+					<h4>Stela</h4>
+					<p>
+						2211 Portofino Avenue,<br/>
+						Homestead<br/>
+						Florida, City 33033<br/>
+					</p>
+					<p>
+						<i class="fa fa-mobile"></i> +305 951 4410<br/>
+						<i class="fa fa-envelope-o"></i> us@stelatech.com
+					</p>
+				</div>
+				<!-- TWEETS -->
+                <!--
+				<div class="col-md-6">
+					<h4>Recent Tweets</h4>
+					<div id="showtweets"></div>
+						<script>
+							twitterFetcher.fetch('stela', 'showtweets', 2, true, false, false, '', false, handleTweets, false);
+							
+							function handleTweets(tweets){
+							    var x = tweets.length;
+							    var n = 0;
+							    var element = document.getElementById('showtweets');
+							    var html = '<ul>';
+							    while(n < x) {
+							      html += '<li>' + tweets[n] + '</li>';
+							      n++;
+							    }
+							    html += '</ul>';
+							    element.innerHTML = html;
+							}					
+						</script>
+				</div>
+                -->
+			</div>
+		</div>
+	</div>
+	
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina.js"></script>
+
+
+  	<script>
+		$(window).scroll(function() {
+			$('.si').each(function(){
+			var imagePos = $(this).offset().top;
+	
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+400) {
+					$(this).addClass("slideUp");
+				}
+			});
+		});
+	</script>    
+
+
+
+  
+  </body>
+</html>
