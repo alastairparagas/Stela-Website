@@ -21,7 +21,6 @@ body {
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
-    
 }
 
 /* Titles */
@@ -688,8 +687,12 @@ p.capitalize:first-letter {
     margin-right:auto;
 }
 
-
-
+#about img{
+    width: 75%;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
 
 #portfolio img, #gallery img{
     height: 250px;
